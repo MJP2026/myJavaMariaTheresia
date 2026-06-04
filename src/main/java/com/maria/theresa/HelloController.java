@@ -1,23 +1,24 @@
 package com.maria.theresa;
 
-import org.springframework.web.bind.annotation.GetMapping;
+import com.maria.theresa.api.HelloApi;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class HelloController {
+public class HelloController implements HelloApi {
 
-	@GetMapping("/name")
-	public String name() {
-		return "My Name is Maria Theresa";
+	@Override
+	public ResponseEntity<String> getName() {
+		return ResponseEntity.ok("My Name is Maria Theresa");
 	}
 
-	@GetMapping("/kammer")
-	public String kammer() {
-		return "Hallo meine neue schöne Kammer!";
+	@Override
+	public ResponseEntity<String> getKammer() {
+		return ResponseEntity.ok("Hallo meine neue schöne Kammer!");
 	}
 
-	@GetMapping("/git")
-	public String now_with_git() {
-		return "Now it is working with GIT";
+	@Override
+	public ResponseEntity<String> getGit() {
+		return ResponseEntity.ok("Now it is working with GIT");
 	}
 }

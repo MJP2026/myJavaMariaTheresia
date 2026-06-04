@@ -7,16 +7,37 @@ servers:
 paths:
   /name:
     get:
+      tags:
+        - Hello
+      operationId: getName
       responses:
         '200':
           description: Send out a list of firstnames
+          content:
+            text/plain:
+              schema:
+                type: string
   /kammer:
     get:
+      tags:
+        - Hello
+      operationId: getKammer
       responses:
         '200':
           description: Welcome to the chamber of secrets
+          content:
+            text/plain:
+              schema:
+                type: string
   /git:
     get:
+      tags:
+        - Hello
+      operationId: getGit
       responses:
         '200':
           description: Welcome to the git repository
+          content:
+            text/plain:
+              schema:
+                type: string
