@@ -11,7 +11,7 @@ Using Extension Soring Boot Dashboard
 
 The apllication is a REST Webserer with the following API:
 
-GET /name
-GET /git
-GET /kammer
+GET /v1/name
+GET /v1/git
+GET /v1/kammer
 

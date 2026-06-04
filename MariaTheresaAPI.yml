@@ -3,9 +3,9 @@ info:
   title: Maria Theresa API
   version: '1.0'
 servers:
-  - url: https://localhost:8080/v1
+  - url: https://localhost:8080
 paths:
-  /name:
+  /v1/name:
     get:
       tags:
         - Hello
@@ -17,7 +17,7 @@ paths:
             text/plain:
               schema:
                 type: string
-  /kammer:
+  /v1/kammer:
     get:
       tags:
         - Hello
@@ -29,7 +29,7 @@ paths:
             text/plain:
               schema:
                 type: string
-  /git:
+  /v1/git:
     get:
       tags:
         - Hello
