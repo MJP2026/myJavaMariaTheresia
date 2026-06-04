@@ -15,4 +15,9 @@ public class HelloController {
 	public String name() {
 		return "My Name is Maria Theresa";
 	}
+
+	@GetMapping("/nowwithgit")
+	public String now_with_git() {
+		return "Now it is working with GIT";
+	}
 }
