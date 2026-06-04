@@ -21,4 +21,9 @@ public class HelloController implements HelloApi {
 	public ResponseEntity<String> getGit() {
 		return ResponseEntity.ok("Now it is working with GIT");
 	}
+
+	@Override
+	public ResponseEntity<String> getBall() {
+		return ResponseEntity.ok("I have a ball");
+	}
 }
