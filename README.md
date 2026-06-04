@@ -14,4 +14,5 @@ The apllication is a REST Webserer with the following API:
 GET /v1/name
 GET /v1/git
 GET /v1/kammer
+GET /v1/ball
 
