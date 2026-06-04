@@ -11,12 +11,12 @@ public class HelloController {
 		return "Hallo meine neue schöne Kammer!";
 	}
 
-	@GetMapping("/namew")
+	@GetMapping("/name")
 	public String name() {
 		return "My Name is Maria Theresa";
 	}
 
-	@GetMapping("/nowwithgit")
+	@GetMapping("/git")
 	public String now_with_git() {
 		return "Now it is working with GIT";
 	}
