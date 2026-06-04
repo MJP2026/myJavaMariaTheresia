@@ -10,3 +10,13 @@ paths:
       responses:
         '200':
           description: Send out a list of firstnames
+  /kammer:
+    get:
+      responses:
+        '200':
+          description: Welcome to the chamber of secrets
+  /git:
+    get:
+      responses:
+        '200':
+          description: Welcome to the git repository
