@@ -30,8 +30,8 @@ build/
 !**/src/test/**/build/
 
 ### gradle ###
-.gradle
-/theresa/.gradle
+.gradle/
+.build/
 
 ### VS Code ###
 .vscode/
